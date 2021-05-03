@@ -1,3 +1,4 @@
 libraries{
+  merge = true
   maven
 }

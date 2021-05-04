@@ -1,12 +1,1 @@
-pipeline{
-  agent any
-  stages{
-    stage("CI"){
-      steps{
-        script{
-          build()
-        }
-      }
-    }
-  }
-}
+build()

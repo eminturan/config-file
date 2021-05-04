@@ -1,5 +1,5 @@
 libraries{
-  deneme
+  deneme/steps
 }
 
-allow_scm_jenkinsfile = true 
+allow_scm_jenkinsfile = true

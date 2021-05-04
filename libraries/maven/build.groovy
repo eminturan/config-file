@@ -1,3 +1,5 @@
 void call(){
-  println "Ali Kemal Şahin"
+    stage("Maven: Build"){
+      println "Ali Kemal Şahin"
+    }
 }

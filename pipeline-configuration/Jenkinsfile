@@ -8,5 +8,21 @@ pipeline{
         }
       }
     }
+
+    stage("Deneme"){
+      steps{
+        script{
+          print "Emin"
+        }
+      }
+    }
+
+    stage("Deneme-2"){
+      steps{
+        script{
+          print "Turan"
+        }
+      }
+    }
   }
 }

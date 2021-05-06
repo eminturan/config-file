@@ -20,17 +20,15 @@ void callStart(){
 }
 @CleanUp()
 void callSendMessage(){
-   post {
+  post {
         success {
         	script {
-        	       print "SUCCESS"
-        	   }
+            print "Okey"
         	}
         }
         failure {
         	script {
-        	       print "FAILURE"
-        	   }
+            print "FAIL"
         	}
         }
     }

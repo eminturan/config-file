@@ -13,7 +13,6 @@ pipeline{
       steps{
         script{
           print "Emin"
-          mvn clean
         }
       }
     }

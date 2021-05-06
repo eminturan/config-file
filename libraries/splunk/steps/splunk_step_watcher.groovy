@@ -26,7 +26,7 @@ void callSendMessage(){
         println "${currentBuild.result}"
         println "${currentBuild.displayName}"
         println "${currentBuild.fullDisplayName}"
-        if ("${currentBuild.currentResult}" == "SUCCESS")
+        if ("${currentBuild.currentResult}" == "FAILURE")
         {
           println "emin turan"
         }

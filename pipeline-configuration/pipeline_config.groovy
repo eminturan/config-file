@@ -1,6 +1,6 @@
 libraries{
-  splunk
   deneme
+  splunk
 }
 
 application_environments{

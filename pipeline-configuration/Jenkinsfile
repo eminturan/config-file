@@ -5,6 +5,7 @@ pipeline{
       steps{
         script{
           example()
+          mvn clean
         }
       }
     }
@@ -20,7 +21,7 @@ pipeline{
     stage("Deneme-2"){
       steps{
         script{
-          mvn clean
+          print "Turan"
         }
       }
     }

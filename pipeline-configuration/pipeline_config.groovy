@@ -1,4 +1,5 @@
 libraries{
+  splunk
   deneme
 }
 

@@ -20,29 +20,18 @@ void callStart(){
 }
 @CleanUp()
 void callSendMessage(){
-    if (currentBuild.currentResult.toString() == "SUCCESS") {
-        println "a"
-        println "${currentBuild.currentResult}"
-        println "${currentBuild.result}"
-        println "${currentBuild.displayName}"
-        println "${currentBuild.fullDisplayName}"
-        if ("${currentBuild.currentResult}" == "FAILURE")
-        {
-          println "emin turan"
+   post {
+        success {
+        	script {
+        	       print "SUCCESS"
+        	   }
+        	}
         }
-    }
-    if (currentBuild.currentResult.toString() == "FAILURE") {
-        println "b"
-        println "${currentBuild.currentResult}"
-        println "${currentBuild.result}"
-        println "${currentBuild.displayName}"
-        println "${currentBuild.fullDisplayName}"
-    }
-    if (currentBuild.currentResult.toString() == "ABORTED") {
-        println "a"
-        println "${currentBuild.currentResult}"
-        println "${currentBuild.result}"
-        println "${currentBuild.displayName}"
-        println "${currentBuild.fullDisplayName}"
+        failure {
+        	script {
+        	       print "FAILURE"
+        	   }
+        	}
+        }
     }
 } 

@@ -5,7 +5,6 @@ pipeline{
       steps{
         script{
           example()
-          mvn clean
         }
       }
     }
